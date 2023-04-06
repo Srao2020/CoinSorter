@@ -29,8 +29,10 @@ public class CoinSorterMachine {
 
     private Coin makeCoin(double value) {
         for(Coin c : coinMap) {
-            if(c.getValue)
+            if(c.getValue() == value)
+                return c;
         }
+        return null;
     }
 
     /**
@@ -67,27 +69,18 @@ public class CoinSorterMachine {
         DecimalFormat df = new DecimalFormat("$0.00");
         System.out.println("Summary of deposit: ");
         for(int i = 0; i < coinCounts.length; i++) {
-            System.out.println("\t" + coinCounts[i] + " ");
-            System.out.println((coinCounts[i] > 1 ? coinMap.get(i).getPluralName() : coinMap.get(i).getName()) + " ");
+            System.out.print("\t" + coinCounts[i] + " ");
+            System.out.print((coinCounts[i] > 1 ? coinMap.get(i).getPluralName() : coinMap.get(i).getName()) + " ");
             System.out.println(df.format(coinCounts[i]*coinMap.get(i).getValue()));
         }
-        for(Coin c : coins) {
-            if(c instanceof Penny) {
-                System.out.print("\t" + coinCounts[0] + " " +(coinCounts[0] > 1 ? c.getPluralName() : c.getName()) + " ");
-            }
-            else if(c instanceof Nickel) {
-                System.out.print("\t" + coinCounts[1] + " " +(coinCounts[1] > 1 ? c.getPluralName() : c.getName()) + " ");
-            }
-            System.out.println(df.format(coinCounts[0]*c.getValue()));
-        }
-        System.out.println("TOTAL DEPOSIT: $" + df.format(getTotalValue()));
+        System.out.println("TOTAL DEPOSIT: " + df.format(getTotalValue()));
 
     }
     /** @return the total value of all Coin objects stored in coins as a double */
     public double getTotalValue() {
         double total = 0;
         for(int i = 0; i < coinCounts.length; i++) {
-            total += coinCounts[i]+coinMap.get(i).getValue();
+            total += coinCounts[i]*coinMap.get(i).getValue();
         }
         return total;
     }

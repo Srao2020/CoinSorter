@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6b2d0b-db36-47af-8fcd-5b235ebd0352" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CoinSorterMachine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Coin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoinSorterMachine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dollar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HalfDollar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nickel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Penny.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Quarter.java" afterDir="false" />
+    <list default="true" id="ed6b2d0b-db36-47af-8fcd-5b235ebd0352" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoinSorterMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoinSorterMachine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +60,16 @@
       <updated>1680178493923</updated>
       <workItem from="1680178496107" duration="79000" />
       <workItem from="1680178578758" duration="5172000" />
-      <workItem from="1680794068076" duration="1350000" />
+      <workItem from="1680794068076" duration="2020000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1680795487028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680795487028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
 </project>
